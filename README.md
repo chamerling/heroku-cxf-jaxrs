@@ -1,11 +1,11 @@
 # heroku-cxf-jaxrs
 
-JAXRS sample using CXF and running on Heroku.
+A JAXRS sample using Apache CXF 2.5.0 and running on Heroku platform.
 
 ## Deploy
 
-0. Create an heroku account, download heroku client for your distribution...
-1. Login to Heroku : 'heroku auth:login'
+0. Create an [heroku.com](http://heroku.com) account, download heroku client for your distribution, RTFM...
+1. From the shell, login to Heroku : 'heroku auth:login'
 2. Clone me then cd to cloned repository
 3. Create the app on heroku : 'heroku create -s cedar'
 4. Push the app to heroku : 'git push heroku master'
@@ -13,12 +13,15 @@ JAXRS sample using CXF and running on Heroku.
 
 ## Use
 
-I put some sample on how to use JAXRS in different situations with different needs: Check the code for details (org.chamerling.heroku.service.rest.SampleService). The list method shows a way to return JSON array using JAXB annotated classes, there are other solutions but this one is not so bad...
+I put some sample on how to use JAXRS in different situations with different needs: Check the code for details ([org.chamerling.heroku.service.rest.SampleService](https://github.com/chamerling/heroku-cxf-jaxrs/blob/master/src/main/java/org/chamerling/heroku/service/rest/SampleService.java)). The list method shows a way to return JSON array using JAXB annotated classes, there are other solutions but this one is not so bad...
 
-URLs:
+### Useful URLs:
 
-- http://yourherokuinstance/sample/ping : Returns raw pong message
-- http://yourherokuinstance/sample/list : Returns a JSON array
-- http://yourherokuinstance/sample/query?foo=bar : Returns the bar value in a bean
-- http://yourherokuinstance/sample/path/foo : Returns the 'foo' path paremeter
+- http://yourapp.herokuapp.com/rest/?_wadl&_type=xml : WADL description of the service
+- http://yourapp.herokuapp.com/rest/sample/ping : Returns raw pong message
+- http://yourapp.herokuapp.com/rest/sample/list : Returns a JSON array
+- http://yourapp.herokuapp.com/rest/sample/query?foo=bar : Returns the bar value in a bean
+- http://yourapp.herokuapp.com/rest/sample/path/foo : Returns the 'foo' path paremeter
 
+You get check the running instance at
+[http://severe-spring-2425.herokuapp.com/](http://severe-spring-2425.herokuapp.com/)
