@@ -23,5 +23,5 @@ I put some sample on how to use JAXRS in different situations with different nee
 - http://yourapp.herokuapp.com/rest/sample/query?foo=bar : Returns the bar value in a bean
 - http://yourapp.herokuapp.com/rest/sample/path/foo : Returns the 'foo' path paremeter
 
-You get check the running instance at
+You can check a running instance at
 [http://severe-spring-2425.herokuapp.com/](http://severe-spring-2425.herokuapp.com/)
